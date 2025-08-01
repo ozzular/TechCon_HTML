@@ -1,52 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Register - TechCon 2024</title>
 </head>
 <body>
-
   <header>
     <h1>Register for TechCon 2024</h1>
-    <p>Secure your spot at the most anticipated tech conference of the year.</p>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="schedule.html">Schedule</a> |
+      <a href="register.html">Register</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="schedule.html">Schedule</a></li>
-      <li><a href="register.html">Register</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
   <main>
     <section>
-      <h2>Registration Form</h2>
-      <form action="#" method="post">
-        <label for="fullname">Full Name:</label><br>
-        <input type="text" id="fullname" name="fullname" required><br><br>
+      <form action="/submit" method="post">
+        <label for="fullname">Full Name:</label><br/>
+        <input type="text" id="fullname" name="fullname" required /><br/>
 
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Email:</label><br/>
+        <input type="email" id="email" name="email" required /><br/>
 
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <label for="ticket">Ticket Type:</label><br>
+        <label for="ticket">Ticket Type:</label><br/>
         <select id="ticket" name="ticket">
-          <option value="standard">Standard</option>
+          <option value="general">General Admission</option>
           <option value="vip">VIP</option>
-          <option value="student">Student</option>
-        </select><br><br>
+        </select><br/>
 
-        <label>
-          <input type="checkbox" name="newsletter" value="yes">
-          Subscribe to newsletter
-        </label><br><br>
-
-        <input type="submit" value="Register">
+        <button type="submit">Register</button>
       </form>
     </section>
   </main>
@@ -54,6 +40,5 @@
   <footer>
     <p>&copy; 2024 TechCon. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
