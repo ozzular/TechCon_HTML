@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Register - TechCon 2024</title>
+  <meta charset="UTF-8">
+  <title>Register | TechCon 2024</title>
 </head>
 <body>
   <header>
@@ -19,18 +18,21 @@
 
   <main>
     <section>
-      <form action="/submit" method="post">
-        <label for="fullname">Full Name:</label><br/>
-        <input type="text" id="fullname" name="fullname" required /><br/>
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
 
-        <label for="email">Email:</label><br/>
-        <input type="email" id="email" name="email" required /><br/>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-        <label for="ticket">Ticket Type:</label><br/>
-        <select id="ticket" name="ticket">
-          <option value="general">General Admission</option>
-          <option value="vip">VIP</option>
-        </select><br/>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label>
+          <input type="checkbox" name="agree" required>
+          I agree to the terms and conditions
+        </label><br><br>
 
         <button type="submit">Register</button>
       </form>
